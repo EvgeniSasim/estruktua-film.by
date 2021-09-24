@@ -1,0 +1,118 @@
+@mixin buttonBtn($max-width, $padding) {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 105.9%;
+  color: #000000;
+  background: #ffba58;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  border: none;
+  padding: $padding;
+  max-width: $max-width;
+  cursor: pointer;
+  transform-origin: center center;
+  transition: all ease-out 240ms;
+  &:hover {
+    background: #434c8a;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+  }
+}
+@mixin titleH2($color, $max-width, $font-size: "26px") {
+  position: relative;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 105.9%;
+  color: $color;
+  max-width: $max-width;
+  @media (max-width: $xs) {
+    font-size: #{$font-size};
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ffba58;
+    bottom: -9px;
+    left: 103px;
+    width: 100%;
+    @media (max-width: $md) {
+      right: 0;
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin font-face($name, $file, $weight: 400, $style: normal) {
+  @font-face {
+    font-family: "#{$name}";
+    src: local("#{$file}"), url("../fonts/#{$file}.woff2") format("woff2"),
+      url("../fonts/#{$file}.woff") format("woff");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
+
+@mixin bg($size: "contain", $position: "center") {
+  background-size: #{$size};
+  background-position: #{$position};
+  background-repeat: no-repeat;
+}
+
+@mixin btn_anim($scaleMax: 1.05, $scaleMin: 0.95) {
+  transform-origin: center center;
+  transition: all ease-out 240ms;
+
+  &:hover {
+    transform: scale(#{$scaleMax});
+  }
+
+  &:focus {
+    outline: transparent;
+  }
+
+  &:focus-visible {
+    transform: scale(#{$scaleMax}) translateY(-5%);
+  }
+
+  &:active {
+    transform: scale(#{$scaleMin});
+  }
+}
+
+@mixin no-btn($display: "inline-block") {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  border-radius: 0;
+  cursor: pointer;
+  appearance: none;
+  display: #{$display};
+}
+
+@mixin transit($tr: 0.24) {
+  transition: all #{$tr}s;
+}
+
+@mixin container($max-width: "120rem", $padding: "2rem") {
+  width: 100%;
+  max-width: #{$max-width};
+  padding: 0 #{$padding};
+  margin: 0 auto;
+}

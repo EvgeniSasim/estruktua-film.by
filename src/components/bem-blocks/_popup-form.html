@@ -1,0 +1,52 @@
+<div class="popup-form" id="myForm">
+  <div class="popup-form__close" onclick="closeForm('myForm')">
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/img/close.webp"
+      alt="Close"
+    />
+  </div>
+  <div class="popup-form__title">Отправить заявку</div>
+  <form action="mail.php" method="POST" id="popup">
+    <div class="input-name">
+      <div class="input-text">Имя</div>
+      <input
+        type="text"
+        placeholder="Введите ваше имя "
+        required="required"
+        name="name"
+      />
+    </div>
+    <div class="input-number">
+      <div class="input-text">Телефон</div>
+      <input
+        type="text"
+        name="phone"
+        placeholder="Введите номер телефона"
+        required="required"
+      />
+    </div>
+    <button class="btn" type="submit">Отправить</button>
+  </form>
+  <img
+    src="<?php bloginfo( 'template_url' ); ?>/img/callback.webp"
+    alt="Оставить заявку"
+    class="popup-form__img"
+  />
+</div>
+
+<div class="thanks-form" id="thanks-window">
+  <div class="thanks-form__close" onclick="closeForm('thanks-window')">
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/img/close.webp"
+      alt="Close"
+    />
+  </div>
+  <div class="thank-content">
+    <div class="thanks-form__title">Спасибо! Ваш запрос отправлен!</div>
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/img/good.webp"
+      alt="Оставить заявку"
+      class="thanks-form__img"
+    />
+  </div>
+</div>

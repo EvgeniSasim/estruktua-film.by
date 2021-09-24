@@ -1,0 +1,151 @@
+section#header__about-page {
+  .container {
+    justify-content: center;
+    .img-title {
+      img {
+        @media (max-width: 885px) {
+          width: calc(160px * 0.9);
+          height: calc(106px * 0.9);
+        }
+        @media (max-width: 660px) {
+          width: calc(160px * 0.7);
+          height: calc(106px * 0.7);
+        }
+      }
+    }
+    .contents-title {
+      h1 {
+        @media (max-width: 885px) {
+          font-size: 34px;
+        }
+        @media (max-width: 660px) {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+section#command-section__about-page {
+  background: #fff;
+  .container {
+    .contents__items {
+      &__item {
+        h5 {
+          color: #2c2e43;
+        }
+      }
+    }
+  }
+}
+section.about-company-section {
+  .container {
+    padding-top: 39px;
+    h2 {
+      @include titleH2(#2c2e43, 444px, $font-size: "26px");
+      margin-bottom: 34px;
+    }
+    .about-company__contents {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 800px) {
+        flex-direction: column-reverse;
+      }
+      .about-company__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        max-width: 538px;
+        p {
+          padding-bottom: 20px;
+        }
+      }
+      .about-company__img {
+        @media (max-width: 1000px) {
+          align-self: flex-start;
+        }
+        @media (max-width: 800px) {
+          align-self: center;
+        }
+        img {
+          margin-top: -67px;
+          @media (max-width: 1000px) {
+            margin-top: -20px;
+          }
+          @media (max-width: 900px) {
+            margin-top: 0px;
+          }
+          @media (max-width: 1200px) {
+            width: calc(540px * 0.9);
+            height: calc(374px * 0.9);
+          }
+          @media (max-width: 1100px) {
+            width: calc(540px * 0.8);
+            height: calc(374px * 0.8);
+          }
+          @media (max-width: 1000px) {
+            width: calc(540px * 0.7);
+            height: calc(374px * 0.7);
+          }
+          @media (max-width: 900px) {
+            width: calc(540px * 0.6);
+            height: calc(374px * 0.6);
+          }
+        }
+      }
+    }
+  }
+}
+section#about-page__services {
+  background: linear-gradient(
+    105.7deg,
+    #424b8a 5.39%,
+    #768ab1 47.91%,
+    #afcedd 88.7%
+  );
+  .container {
+    padding-top: 40px;
+    @media (max-width: 1111px) {
+      padding-bottom: 50px;
+    }
+    h3 {
+      @include titleH2(#2c2e43, 486px, $font-size: "26px");
+      margin-top: 0;
+      margin-bottom: 55px;
+    }
+    .services-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      @media (max-width: 1111px) {
+        flex-direction: column;
+      }
+      .servises__items {
+        flex-direction: column;
+        align-items: center;
+        &__item {
+          margin-bottom: 23px;
+        }
+      }
+      h4 {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 105.9%;
+        color: #2c2e43;
+        margin-bottom: 119px;
+        @media (max-width: 1111px) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

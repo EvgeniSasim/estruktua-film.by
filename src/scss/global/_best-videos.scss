@@ -1,0 +1,65 @@
+section.best-videos {
+  .container {
+    margin-top: 70px;
+    h2 {
+      @include titleH2(#2c2e43, 324px);
+      margin-bottom: 38px;
+    }
+    .subtitle {
+      max-width: 474px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      margin-bottom: 64px;
+    }
+    .videos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 29px;
+      @media (max-width: $lg) {
+        gap: 10px;
+      }
+      @media (max-width: $md) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 0;
+      }
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .video {
+          margin-bottom: 28px;
+          cursor: pointer;
+        }
+        .descr {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          color: #000000;
+          text-align: center;
+          min-height: 51px;
+          max-width: 255px;
+        }
+      }
+    }
+    .button-potfolio {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 25px;
+      margin-bottom: 70px;
+      a.btn {
+        @include buttonBtn(270px, 14px 39px);
+      }
+    }
+  }
+}

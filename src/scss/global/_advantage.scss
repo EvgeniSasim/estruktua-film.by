@@ -1,0 +1,88 @@
+section.advantage {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    background-image: url(../img/play_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (max-width: $xs) {
+      background-image: inherit;
+    }
+    h2 {
+      @include titleH2(#2c2e43, 571px);
+      margin-top: 45px;
+    }
+    .contents {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 40px;
+      @media (max-width: $sm) {
+        flex-direction: column;
+        margin-bottom: 40px;
+      }
+      &__items {
+        display: flex;
+        flex-direction: column;
+        &__item {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 67px;
+          @media (max-width: $xs) {
+            flex-direction: column-reverse;
+            margin-bottom: 15px;
+          }
+          &__descr {
+            h3 {
+              font-family: Nunito;
+              font-style: normal;
+              font-weight: 800;
+              font-size: 22px;
+              line-height: 105.9%;
+              color: #2c2e43;
+              margin-bottom: 13px;
+              padding-top: 28px;
+            }
+            .description {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 17px;
+              color: #000000;
+              max-width: 222px;
+            }
+            &.text__left {
+              text-align: left;
+              .description {
+                margin-left: 5px;
+              }
+              h3 {
+                margin-left: 2px;
+              }
+            }
+            &.text__right {
+              text-align: right;
+              @media (max-width: $xs) {
+                text-align: left;
+              }
+              .description {
+                margin-right: 5px;
+              }
+              h3 {
+                margin-right: 2px;
+              }
+            }
+          }
+          &:nth-child(2) {
+            @media (max-width: $xs) {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}

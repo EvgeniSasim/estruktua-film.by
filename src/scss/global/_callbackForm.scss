@@ -1,0 +1,29 @@
+section.feedback-section.callback-section {
+  background: #fff;
+  .container {
+    padding-bottom: 31px;
+    .feedback-contents {
+      display: initial;
+      .feedback__form {
+        form.callback-form {
+          @media (min-width: 990px) {
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .input-name {
+            @media (min-width: 990px) {
+              margin-bottom: 0px;
+            }
+          }
+          button.btn {
+            @media (min-width: 990px) {
+              margin-top: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

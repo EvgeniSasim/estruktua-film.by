@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="estruktura-film_by" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>estruktura-film_by</title>
+  </head>
+</html>
+
+
+<body>
+	<header>
+  <div class="container">
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="<?php bloginfo( 'template_url' ); ?>/img/logo_text.webp"
+              alt="Logo"
+              id="logo"
+            />
+          </a>
+        </div>
+        <div class="menu">
+          <ul class="menu__list">
+            <?php
+            wp_nav_menu( [
+            'theme_location'  =>
+            'header_menu', 'menu' => '', 'container' => false, 'echo' => true,
+            'fallback_cb' => 'wp_page_menu', 'items_wrap' => ' %3$s ', 'depth'
+            => 1, ] ); ?>
+          </ul>
+        </div>
+        <div class="tell">
+          <ul>
+            <li>
+              <a href="tel:+375447456031" id="tell-first">+375(44)7456031</a>
+              <ul class="tell-second">
+                <li><a href="tel:+375447456031">+375(29)7459031</a></li>
+                <li><a href="tel:+375447456031">+375(22)2770944</a></li>
+              </ul>
+            </li>
+          </ul>
+          <img
+            src="<?php bloginfo( 'template_url' ); ?>/img/Polygon.webp"
+            alt="Polygon"
+          />
+        </div>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+	<section class="header-title" id="header__about-page">
+  <div class="container">
+    <div class="img-title">
+      <img src="/img/about_logo.webp" alt="ПОРТФОЛИО" />
+    </div>
+    <div class="contents-title">
+      <h1>“ЭСТРУКТУРА-ФИЛЬМ”</h1>
+      <div class="subtitle">Анимационная студия представляет</div>
+    </div>
+  </div>
+</section>
+
+	<section class="breadcrumbs">
+  <div class="container">
+    <div class="page-title-breadcrumbs">
+      <div class="assistive-text">Вы здесь:</div>
+      <ol
+        class="breadcrumbs text-small"
+        itemscope=""
+        itemtype="https://schema.org/BreadcrumbList"
+      >
+        <li
+          itemprop="itemListElement"
+          itemscope=""
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/" title=""
+            ><span itemprop="name">Главная</span></a
+          ><meta itemprop="position" content="1" />
+        </li>
+        <li
+          class="current"
+          itemprop="itemListElement"
+          itemscope=""
+          itemtype="https://schema.org/ListItem"
+        >
+          <span itemprop="name">О компании</span
+          ><meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section class="about-company-section">
+  <div class="container">
+    <h2>О компании</h2>
+    <div class="about-company__contents">
+      <div class="about-company__text">
+        <p>
+          Мы - амбициозное предприятие, созданное в 2012 г. и готовое
+          сотрудничать со всеми заинтересованными лицами, как юридическим, так и
+          физическими. В 2020 году наше предприятие открыло еще одно направление
+          деятельности и создало анимационную студию “ЭСТРУКТУРА-ФИЛЬМ”, где
+          создаются анимационные фильмы, рекламные ролики и другая
+          художественная продукция.
+        </p>
+        <p>
+          Команда “ЭСТРУКТУРА-ФИЛЬМ” состоит из профессионалов, которые готовы к
+          выполнению поставленных задач . Покажем сильные стороны вашего
+          бизнеса, анимируем продуки или создадим обучающий мультфильм.
+        </p>
+        <p>
+          Мы работаем над проектами любой сложности от разработки идеи до полной
+          её реализации. Цель нашей работы решать задачи бизнеса с помощью видео
+          и добиваться результата.
+        </p>
+        <p>
+          Главный офис компании находится в Могилеве, оказываем услуги
+          посоздании анимации по всей Беларуси.
+        </p>
+      </div>
+      <div class="about-company__img">
+        <img src="/img/about_company.webp" alt="О компании" />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="command-section" id="command-section__about-page">
+  <div class="container">
+    <h4>
+      Наша команда вместе с вами создаст уникальную и эффективную анимацию
+    </h4>
+    <div class="contents__items">
+      <div class="contents__items__item">
+        <div class="contents__items__item__img">
+          <img src="/img/uniqueness.webp" alt="Уникальность" />
+        </div>
+        <h5>Уникальность</h5>
+        <div class="contents__items__item__descr">
+          Индивидуальный подход и оригинальные идеи для каждого клиента
+        </div>
+      </div>
+      <div class="contents__items__item">
+        <div class="contents__items__item__img">
+          <img src="/img/expertise.webp" alt="Экспертность" />
+        </div>
+        <h5>Экспертность</h5>
+        <div class="contents__items__item__descr">
+          Работаем на результат во всех сферах 2D анимации с полным циклом
+          производства
+        </div>
+      </div>
+      <div class="contents__items__item">
+        <div class="contents__items__item__img">
+          <img src="/img/availability.webp" alt="Доступность" />
+        </div>
+        <h5>Доступность</h5>
+        <div class="contents__items__item__descr">
+          Доступные цены и гибкая система скидок для наших постоянных клиентов и
+          партнеров
+        </div>
+      </div>
+      <div class="contents__items__item">
+        <div class="contents__items__item__img">
+          <img src="/img/promptness.webp" alt="Оперативность" />
+        </div>
+        <h5>Оперативность</h5>
+        <div class="contents__items__item__descr">
+          Распланированный поэтапно проект, оперативность создания анимации
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="servises" id="about-page__services">
+  <div class="container">
+    <h3>Основные направления работы:</h3>
+    <div class="services-container">
+      <div class="servises__items">
+        <div class="servises__items__item">
+          <div class="servis__img">
+            <img src="/img/Animation_videos.webp" alt="Анимационные ролики" />
+          </div>
+        </div>
+        <h4>Анимационные ролики</h4>
+      </div>
+      <div class="servises__items">
+        <div class="servises__items__item">
+          <div class="servis__img">
+            <img src="/img/Commercials.webp" alt="Рекламные ролики" />
+          </div>
+        </div>
+        <h4>Рекламные ролики</h4>
+      </div>
+      <div class="servises__items">
+        <div class="servises__items__item">
+          <div class="servis__img">
+            <img src="/img/Multiple_series.webp" alt="Мультсериалы" />
+          </div>
+        </div>
+        <h4>Мультсериалы</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="feedback-section callback-section">
+  <div class="container">
+    <h3>Узнать стоимость и сроки исполнения</h3>
+    <div class="feedback-contents">
+      <div class="feedback__form">
+        <div class="feedback__form__descr">
+          Мы свяжемся с вами, уточним детали, рассчитаем сроки и бюджет по
+          созданию анимационного ролика для вас.
+        </div>
+        <form action="" class="callback-form">
+          <div class="input-name">
+            <div class="input-text">Имя</div>
+            <input
+              type="text"
+              placeholder="Введите ваше имя "
+              required="required"
+            />
+          </div>
+          <div class="input-number">
+            <div class="input-text">Телефон</div>
+            <input
+              type="text"
+              placeholder="Введите номер телефона"
+              required="required"
+            />
+          </div>
+          <button class="btn">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	<footer class="footer">
+  <section class="footer-info">
+    <div class="container">
+      <div class="footer-navi">
+        <div class="footer-navi__title">
+          Частное проектно-строительное унитарное предприятие “ЭСТУКТУРА”
+        </div>
+        <div class="footer-navi__list">
+          <ul>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="contact-us.html">О компании</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-contacts">
+        <div class="footer-contacts__title">Контакты</div>
+        <div class="footer-contacts__list">
+          <a href="tel:+375447456031">+375447456031</a>
+          <a href="tel:+375297459031">+375297459031</a>
+          <div>
+            <a href="tel:+375222770944">+375222770944</a>
+            <span>тел./факс.</span>
+          </div>
+          <a href="mailto:estruktura-m@mail.ru">estruktura-m@mail.ru</a>
+        </div>
+      </div>
+      <div class="footer-adress">
+        <div class="footer-adress__title">Адрес</div>
+        <div class="footer-adress__location">
+          <span>Республика Беларусь</span>
+          <span>Могилевская область</span>
+          <span>г.Могилев</span>
+          <span>ул. Космонавтов, 12</span>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <div class="footer-socials__title">Следите за новостями</div>
+        <div class="footer-socials__icons">
+          <a href="https://www.instagram.com/estruktura_m/" target="_blanck"
+            ><img
+              src="<?php bloginfo( 'template_url' ); ?>/img/instagram_icon.webp"
+              alt="Instagram"
+          /></a>
+          <a href="https://vk.com/estruktura" target="_blanck"
+            ><img
+              src="<?php bloginfo( 'template_url' ); ?>/img/vk_icon.webp"
+              alt="VK"
+          /></a>
+          <a href="#"
+            ><img
+              src="<?php bloginfo( 'template_url' ); ?>/img/fb_icon.webp"
+              alt="FaceBook"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-section">
+    <span>Copyright © 2021 Все права защищены</span>
+  </section>
+</footer>
+
+	<script src="js/main.min.js"></script>
+
+	<div class="popup-form" id="myForm">
+  <div class="popup-form__close" onclick="closeForm('myForm')">
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/img/close.webp"
+      alt="Close"
+    />
+  </div>
+  <div class="popup-form__title">Отправить заявку</div>
+  <form action="mail.php" method="POST" id="popup">
+    <div class="input-name">
+      <div class="input-text">Имя</div>
+      <input
+        type="text"
+        placeholder="Введите ваше имя "
+        required="required"
+        name="name"
+      />
+    </div>
+    <div class="input-number">
+      <div class="input-text">Телефон</div>
+      <input
+        type="text"
+        name="phone"
+        placeholder="Введите номер телефона"
+        required="required"
+      />
+    </div>
+    <button class="btn" type="submit">Отправить</button>
+  </form>
+  <img
+    src="<?php bloginfo( 'template_url' ); ?>/img/callback.webp"
+    alt="Оставить заявку"
+    class="popup-form__img"
+  />
+</div>
+
+<div class="thanks-form" id="thanks-window">
+  <div class="thanks-form__close" onclick="closeForm('thanks-window')">
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/img/close.webp"
+      alt="Close"
+    />
+  </div>
+  <div class="thank-content">
+    <div class="thanks-form__title">Спасибо! Ваш запрос отправлен!</div>
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/img/good.webp"
+      alt="Оставить заявку"
+      class="thanks-form__img"
+    />
+  </div>
+</div>
+ 
+</body>
+</html>

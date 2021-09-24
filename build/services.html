@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="estruktura-film_by" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>estruktura-film_by</title>
+  </head>
+</html>
+
+
+<body>
+	<header>
+  <div class="container">
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="<?php bloginfo( 'template_url' ); ?>/img/logo_text.webp"
+              alt="Logo"
+              id="logo"
+            />
+          </a>
+        </div>
+        <div class="menu">
+          <ul class="menu__list">
+            <?php
+            wp_nav_menu( [
+            'theme_location'  =>
+            'header_menu', 'menu' => '', 'container' => false, 'echo' => true,
+            'fallback_cb' => 'wp_page_menu', 'items_wrap' => ' %3$s ', 'depth'
+            => 1, ] ); ?>
+          </ul>
+        </div>
+        <div class="tell">
+          <ul>
+            <li>
+              <a href="tel:+375447456031" id="tell-first">+375(44)7456031</a>
+              <ul class="tell-second">
+                <li><a href="tel:+375447456031">+375(29)7459031</a></li>
+                <li><a href="tel:+375447456031">+375(22)2770944</a></li>
+              </ul>
+            </li>
+          </ul>
+          <img
+            src="<?php bloginfo( 'template_url' ); ?>/img/Polygon.webp"
+            alt="Polygon"
+          />
+        </div>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+	<section class="header-title">
+  <div class="container">
+    <div class="img-title">
+      <img src="/img/services.webp" alt="Наши услуги" />
+    </div>
+    <div class="contents-title">
+      <h1>НАШИ УСЛУГИ</h1>
+      <div class="subtitle">
+        Анимационные ролики для бизнеса, рекламные ролики продукта или компании,
+        а также ролики для социальных сетей и мультсериалы
+      </div>
+    </div>
+  </div>
+</section>
+
+	<section class="breadcrumbs">
+  <div class="container">
+    <div class="page-title-breadcrumbs">
+      <div class="assistive-text">Вы здесь:</div>
+      <ol
+        class="breadcrumbs text-small"
+        itemscope=""
+        itemtype="https://schema.org/BreadcrumbList"
+      >
+        <li
+          itemprop="itemListElement"
+          itemscope=""
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/" title=""
+            ><span itemprop="name">Главная</span></a
+          ><meta itemprop="position" content="1" />
+        </li>
+        <li
+          class="current"
+          itemprop="itemListElement"
+          itemscope=""
+          itemtype="https://schema.org/ListItem"
+        >
+          <span itemprop="name">Услуги</span
+          ><meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section class="servises" id="services-page">
+  <div class="container">
+    <div class="servises__items">
+      <div class="servises__items__item">
+        <h3>Анимационные ролики</h3>
+        <div class="servis__img">
+          <img src="/img/Animation_videos.webp" alt="Анимационные ролики" />
+        </div>
+        <div class="descr">
+          Поможем подать любую информацию креативно и наглядно
+        </div>
+        <button class="btn" onclick="openForm('myForm')">
+          Узнать подробнее
+        </button>
+      </div>
+      <div class="servises__items__item">
+        <h3>Рекламные ролики</h3>
+        <div class="servis__img">
+          <img src="/img/Commercials.webp" alt="Рекламные ролики" />
+        </div>
+        <div class="descr">Создадим анимацию, которая приведет клиентов</div>
+        <button class="btn" onclick="openForm('myForm')">
+          Узнать подробнее
+        </button>
+      </div>
+      <div class="servises__items__item">
+        <h3>Мультсериалы</h3>
+        <div class="servis__img">
+          <img src="/img/Multiple_series.webp" alt="Мультсериалы" />
+        </div>
+        <div class="descr">
+          Нарисуем уникальных <br />персонажей, локации и ситуации
+        </div>
+        <button class="btn" onclick="openForm('myForm')">
+          Узнать подробнее
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about-work-section">
+  <div class="container">
+    <h2>Как мы делаем ролики и мультики</h2>
+    <div class="about-work-contents">
+      <div class="script-writing tab1">
+        <h4>Написание сценария</h4>
+        <ul class="script-writing__list">
+          <li>Брифование, сбор информации</li>
+          <li>Наброски идей</li>
+          <li>Черновой сценарий</li>
+          <li>Сценарный план</li>
+          <li>Корректировка сценарного плана и сториборд</li>
+        </ul>
+      </div>
+      <div class="script-writing tab2">
+        <h4>Разработка стилистики</h4>
+        <ul class="script-writing__list">
+          <li>Брифование по персонажам</li>
+          <li>Подбор стилистики и референсов</li>
+          <li>Создание технического задания для всех специалистов</li>
+          <li>Черновая озвучка ролика</li>
+          <li>Создание персонажей</li>
+          <li>Согласование стилистик</li>
+        </ul>
+      </div>
+      <div class="script-writing tab3">
+        <h4>Отрисовка иллюстраций</h4>
+        <ul class="script-writing__list">
+          <li>Отрисовка иллюстраций</li>
+          <li>Раскадровка</li>
+          <li>Чистовая озвучка</li>
+          <li>Аниматик</li>
+        </ul>
+      </div>
+      <div class="script-writing tab4">
+        <h4>Анимация</h4>
+        <ul class="script-writing__list">
+          <li>Риггинг</li>
+          <li>Первичная анимация персонажей и объектов</li>
+          <li>Дорисовка или перерисовка</li>
+          <li>Анимация всех дополнительных элементов</li>
+          <li>Проверка на ошибки</li>
+        </ul>
+      </div>
+      <div class="script-writing tab5">
+        <h4>Профессиональная озвучка</h4>
+        <ul class="script-writing__list">
+          <li>Саунд-дизайн</li>
+          <li>Создание или поиск музыкального фона</li>
+          <li>Очистка аудио дорожек и сведение звуков проекта</li>
+        </ul>
+      </div>
+      <div class="script-writing tab6">
+        <h4>Премьера анимации</h4>
+        <ul class="script-writing__list">
+          <li>Собирается финальная версия ролика</li>
+        </ul>
+      </div>
+      <div class="work-step">
+        <ul class="work-step__list">
+          <li class="work-step__list__item active">Написание сценария</li>
+          <li class="work-step__list__item">Разработка стилистики</li>
+          <li class="work-step__list__item">Отрисовка иллюстраций</li>
+          <li class="work-step__list__item">Анимация</li>
+          <li class="work-step__list__item">Профессиональная озвучка</li>
+          <li class="work-step__list__item">Премьера анимации</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="feedback-section callback-section">
+  <div class="container">
+    <h3>Узнать стоимость и сроки исполнения</h3>
+    <div class="feedback-contents">
+      <div class="feedback__form">
+        <div class="feedback__form__descr">
+          Мы свяжемся с вами, уточним детали, рассчитаем сроки и бюджет по
+          созданию анимационного ролика для вас.
+        </div>
+        <form action="" class="callback-form">
+          <div class="input-name">
+            <div class="input-text">Имя</div>
+            <input
+              type="text"
+              placeholder="Введите ваше имя "
+              required="required"
+            />
+          </div>
+          <div class="input-number">
+            <div class="input-text">Телефон</div>
+            <input
+              type="text"
+              placeholder="Введите номер телефона"
+              required="required"
+            />
+          </div>
+          <button class="btn">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="command-section">
+  <div class="container">
+    <h4>
+      Наша команда вместе с вами создаст уникальную и эффективную анимацию
+    </h4>
+    <div class="contents__items">
+      <div class="contents__items__item">
+        <div class="contents__items__item__img">
+          <img src="/img/uniqueness.webp" alt="Уникальность" />
+        </div>
+        <h5>Уникальность</h5>
+        <div class="contents__items__item__descr">
+          Индивидуальный подход и оригинальные идеи для каждого клиента
+        </div>
+      </div>
+      <div class="contents__items__item">
+        <div class="contents__items__item__img">
+          <img src="/img/expertise.webp" alt="Экспертность" />
+        </div>
+        <h5>Экспертность</h5>
+        <div class="contents__items__item__descr">
+          Работаем на результат во всех сферах 2D анимации с полным циклом
+          производства
+        </div>
+      </div>
+      <div class="contents__items__item">
+        <div class="contents__items__item__img">
+          <img src="/img/availability.webp" alt="Доступность" />
+        </div>
+        <h5>Доступность</h5>
+        <div class="contents__items__item__descr">
+          Доступные цены и гибкая система скидок для наших постоянных клиентов и
+          партнеров
+        </div>
+      </div>
+      <div class="contents__items__item">
+        <div class="contents__items__item__img">
+          <img src="/img/promptness.webp" alt="Оперативность" />
+        </div>
+        <h5>Оперативность</h5>
+        <div class="contents__items__item__descr">
+          Распланированный поэтапно проект, оперативность создания анимации
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="best-videos">
+  <div class="container" id="best-videos__services-page">
+    <h2>Наши лучшие ролики</h2>
+    <div class="subtitle">
+      Несмотря на молодость нашей студии, мы создали уже много анимационных
+      роликов для бизнеса и выпустили мультсериал.
+    </div>
+    <div class="videos">
+      <div class="videos__item">
+        <div class="video">
+          <img
+            src="/img/adventures_Masha_and_Sasha.webp"
+            alt="Приключения Саши и Маши"
+          />
+        </div>
+        <div class="descr">
+          Мультсериал Приключения Маши и Саши. Сери №1 Миссия Египта
+        </div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <img src="/img/safety_on_the water.webp" alt="Безопасность на воде" />
+        </div>
+        <div class="descr">Анимационный ролик Безопасность на воде</div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <img
+            src="/img/adventures_of_Masha_and_Sasha.webp"
+            alt="Приключения Саши и Маши часть 2"
+          />
+        </div>
+        <div class="descr">
+          Мультсериал Приключения Маши и Саши. Сери №1 Мексиканская аномалия
+        </div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <img src="/img/Commercials_video.webp" alt="Рекламный ролик" />
+        </div>
+        <div class="descr">Рекламный ролик нашей студии</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="feedback-section">
+  <div class="container">
+    <h3>Узнайте какой ролик подойдет вам</h3>
+    <div class="feedback-contents">
+      <div class="feedback__form">
+        <div class="feedback__form__descr">
+          Став нашим клиентом, вы получите качественный анимационный ролик,
+          грамотную консультацию, упорядоченую организацию творческого процесса,
+          гарантии юридического лица и при этом доступные цены.
+        </div>
+        <form action="">
+          <div class="input-name">
+            <div class="input-text">Имя</div>
+            <input
+              type="text"
+              placeholder="Введите ваше имя "
+              required="required"
+            />
+          </div>
+          <div class="input-number">
+            <div class="input-text">Телефон</div>
+            <input
+              type="text"
+              placeholder="Введите номер телефона"
+              required="required"
+            />
+          </div>
+          <button class="btn">Оставить заявку</button>
+        </form>
+      </div>
+      <div class="feedback__img" id="feedback-img__services-page">
+        <img src="/img/callback_services.webp" alt="Узнать стоимость и сроки" />
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  /// табы
+  function tabs(
+    headerSelector,
+    tabSelector,
+    contentSelector,
+    activeClass,
+    display = "block"
+  ) {
+    const header = document.querySelector(headerSelector),
+      tab = document.querySelectorAll(tabSelector),
+      content = document.querySelectorAll(contentSelector);
+    function hideTabContent() {
+      content.forEach((item) => {
+        item.style.display = "none";
+      });
+      tab.forEach((item) => {
+        item.classList.remove(activeClass);
+      });
+    }
+    function showTabContent(i = 0) {
+      content[i].style.display = display;
+      tab[i].classList.add(activeClass);
+    }
+    hideTabContent();
+    showTabContent();
+    header.addEventListener("click", (e) => {
+      const target = e.target;
+      if (
+        target.classList.contains(tabSelector.replace(/\./, "")) ||
+        target.parentNode.classList.contains(tabSelector.replace(/\./, ""))
+      ) {
+        tab.forEach((item, i) => {
+          if (target == item || target.parentNode == item) {
+            hideTabContent();
+            showTabContent(i);
+          }
+        });
+      }
+    });
+  }
+  tabs(
+    ".work-step__list",
+    ".work-step__list__item",
+    ".script-writing",
+    "active"
+  );
+</script>
+
+	<footer class="footer">
+  <section class="footer-info">
+    <div class="container">
+      <div class="footer-navi">
+        <div class="footer-navi__title">
+          Частное проектно-строительное унитарное предприятие “ЭСТУКТУРА”
+        </div>
+        <div class="footer-navi__list">
+          <ul>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="contact-us.html">О компании</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-contacts">
+        <div class="footer-contacts__title">Контакты</div>
+        <div class="footer-contacts__list">
+          <a href="tel:+375447456031">+375447456031</a>
+          <a href="tel:+375297459031">+375297459031</a>
+          <div>
+            <a href="tel:+375222770944">+375222770944</a>
+            <span>тел./факс.</span>
+          </div>
+          <a href="mailto:estruktura-m@mail.ru">estruktura-m@mail.ru</a>
+        </div>
+      </div>
+      <div class="footer-adress">
+        <div class="footer-adress__title">Адрес</div>
+        <div class="footer-adress__location">
+          <span>Республика Беларусь</span>
+          <span>Могилевская область</span>
+          <span>г.Могилев</span>
+          <span>ул. Космонавтов, 12</span>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <div class="footer-socials__title">Следите за новостями</div>
+        <div class="footer-socials__icons">
+          <a href="https://www.instagram.com/estruktura_m/" target="_blanck"
+            ><img
+              src="<?php bloginfo( 'template_url' ); ?>/img/instagram_icon.webp"
+              alt="Instagram"
+          /></a>
+          <a href="https://vk.com/estruktura" target="_blanck"
+            ><img
+              src="<?php bloginfo( 'template_url' ); ?>/img/vk_icon.webp"
+              alt="VK"
+          /></a>
+          <a href="#"
+            ><img
+              src="<?php bloginfo( 'template_url' ); ?>/img/fb_icon.webp"
+              alt="FaceBook"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-section">
+    <span>Copyright © 2021 Все права защищены</span>
+  </section>
+</footer>
+
+	<script src="js/main.min.js"></script>
+
+	<div class="popup-form" id="myForm">
+  <div class="popup-form__close" onclick="closeForm('myForm')">
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/img/close.webp"
+      alt="Close"
+    />
+  </div>
+  <div class="popup-form__title">Отправить заявку</div>
+  <form action="mail.php" method="POST" id="popup">
+    <div class="input-name">
+      <div class="input-text">Имя</div>
+      <input
+        type="text"
+        placeholder="Введите ваше имя "
+        required="required"
+        name="name"
+      />
+    </div>
+    <div class="input-number">
+      <div class="input-text">Телефон</div>
+      <input
+        type="text"
+        name="phone"
+        placeholder="Введите номер телефона"
+        required="required"
+      />
+    </div>
+    <button class="btn" type="submit">Отправить</button>
+  </form>
+  <img
+    src="<?php bloginfo( 'template_url' ); ?>/img/callback.webp"
+    alt="Оставить заявку"
+    class="popup-form__img"
+  />
+</div>
+
+<div class="thanks-form" id="thanks-window">
+  <div class="thanks-form__close" onclick="closeForm('thanks-window')">
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/img/close.webp"
+      alt="Close"
+    />
+  </div>
+  <div class="thank-content">
+    <div class="thanks-form__title">Спасибо! Ваш запрос отправлен!</div>
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/img/good.webp"
+      alt="Оставить заявку"
+      class="thanks-form__img"
+    />
+  </div>
+</div>
+ 
+</body>
+
+</html>

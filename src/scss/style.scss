@@ -1,0 +1,100 @@
+@import "base/*.scss";
+@import "global/*.scss";
+@import "**/_*.scss";
+@import "../components/**/*.scss";
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+@include font-face("Montserrat", "Montserrat-Regular", 400);
+@include font-face("Nunito", "Nunito-ExtraBold", 800);
+@include font-face("Nunito", "Nunito-Regular", 400);
+
+.container {
+  max-width: 1108px;
+  margin: 0 auto;
+  @media (max-width: $lg) {
+    max-width: 90%;
+  }
+  @media (max-width: $xs) {
+    max-width: 97%;
+  }
+}
+section.breadcrumbs {
+  .container {
+    .page-title-breadcrumbs {
+      ol {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        li,
+        li a,
+        li a span {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+        }
+        li:first-child::before {
+          position: absolute;
+          top: -10px;
+          left: 0;
+          content: url(../img/home.webp);
+        }
+        // li:not(:first-child):not(:last-child)::after
+        li {
+          padding-right: 44px;
+        }
+        li:not(:last-child)::after {
+          position: absolute;
+          top: -4px;
+          left: 109px;
+          content: url(../img/arrow_breadcrumbs.webp);
+        }
+      }
+      .assistive-text {
+        visibility: hidden;
+        height: 0px;
+      }
+    }
+  }
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: url(../img/arrow_right.webp);
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: url(../img/arrow_left.webp);
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: -45px;
+  left: auto;
+  @media (max-width: 1115px) {
+    right: 10px;
+  }
+  @media (max-width: $xs) {
+    right: 3%;
+  }
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: auto;
+  right: 450px;
+  @media (max-width: 1115px) {
+    right: 425px;
+  }
+  @media (max-width: $xs) {
+    right: 88%;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 53%;
+  @media (max-width: 1115px) {
+    top: 40%;
+  }
+  @media (max-width: $xs) {
+    top: 10%;
+  }
+}

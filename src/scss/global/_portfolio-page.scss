@@ -1,0 +1,52 @@
+div#video__portfolio-page {
+  flex-wrap: wrap;
+}
+section.portfolio-about-work {
+  background: linear-gradient(268.14deg, #444d8a 6.46%, #b2d1df 98.37%);
+  .container {
+    h4 {
+      margin-bottom: 35px;
+      @include titleH2(#2c2e43, 532px, 26px);
+      font-size: 30px;
+      //   &::after {
+      //     right: 0;
+      //     width: 80%;
+      //     left: initial;
+      //     @media (max-width: $xs) {
+      //       width: 100%;
+      //     }
+      //   }
+    }
+    .portfolio-page__subtitle {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
+}
+section#page-portfolio__news {
+  margin-top: 31px;
+  .container {
+    &::before {
+      display: none;
+    }
+    .news {
+      &__items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        justify-content: space-between;
+        &__item {
+          flex: 0 0 50%;
+          @media (max-width: 1050px) {
+            flex: 0 0 100%;
+          }
+        }
+      }
+    }
+  }
+}

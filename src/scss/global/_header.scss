@@ -1,0 +1,288 @@
+header {
+  background: linear-gradient(269.2deg, #424b8a 6.64%, #d9f0ff 100.23%);
+}
+nav {
+  padding-top: 61px;
+  padding-bottom: 38px;
+  overflow: hidden;
+  @media (max-width: $xs) {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+
+nav.fixed__nav {
+  background: linear-gradient(269.2deg, #424b8a 6.64%, #d9f0ff 100.23%);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 111;
+}
+nav .navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  .tell ul > li a#tell-first {
+    position: relative;
+    color: #ffba58;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 5px;
+  }
+  .tell {
+    position: relative;
+    @media (max-width: $xs) {
+      position: inherit;
+    }
+    display: flex;
+    align-items: center;
+    #tell-first {
+      position: relative;
+      &::before {
+        position: absolute;
+        top: -7px;
+        left: -25px;
+        content: url(../img/cil_phone.svg);
+        // @media (max-width: $xs) {
+        //   top: 19px;
+        //   left: 134px;
+        // }
+      }
+      // ul:nth-child(1) {
+      //   &::before {
+      //     position: absolute;
+      //     top: -7px;
+      //     left: -25px;
+      //     content: url(../img/cil_phone.svg);
+      //     @media (max-width: $xs) {
+      //       top: 19px;
+      //       left: 134px;
+      //     }
+      //   }
+      // &::after {
+      //   position: absolute;
+      //   top: 5px;
+      //   right: 0;
+      //   content: "";
+      //   width: 7px;
+      //   height: 6px;
+      //   background: #ffd523;
+      //   clip-path: polygon(50% 100%, 0 0, 100% 0);
+      //   &:hover {
+      //     clip-path: polygon(50% 50%, 0 0, 100% 0);
+      //   }
+      // }
+    }
+    li > ul.tell-second {
+      visibility: hidden;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      background-color: #fff;
+      border-radius: 6px;
+      padding: 6px;
+      border: 1px solid #a166aa;
+      @media (max-width: $xs) {
+        z-index: 9;
+        top: 60px;
+        right: 50px;
+      }
+      li:nth-child(1) {
+        padding-bottom: 5px;
+      }
+      li a {
+        color: #000;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        &:hover {
+          color: #ffba58;
+          transition: all 0.5s ease-out;
+        }
+      }
+    }
+    &:hover {
+      img {
+        transform: rotate(0.5turn);
+        transition: all 0.5s ease-out;
+      }
+      li > ul {
+        visibility: visible;
+        transition: all 0.5s ease-out;
+      }
+    }
+  }
+}
+nav .navbar .menu {
+  display: block;
+}
+.menu ul.menu__list.active li.menu__list-item {
+  margin-bottom: 20px;
+  a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+}
+nav .navbar .logo {
+  z-index: 1;
+  img {
+    max-width: 158px;
+    @media (max-width: $xs) {
+      max-width: 65px;
+    }
+  }
+}
+nav .navbar .menu__list {
+  display: flex;
+  z-index: 1;
+}
+nav .navbar .menu__list-item {
+  margin-right: 40px;
+  position: relative;
+  @media (max-width: $md) {
+    margin-right: 20px;
+  }
+  @media (max-width: 1000px) {
+    margin-right: 10px;
+  }
+}
+nav .navbar .menu__list-item:hover::after {
+  width: 100%;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+nav .navbar .menu__list-item:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #ffba58;
+  bottom: -5px;
+  left: 15px;
+  width: 0;
+}
+nav .navbar .menu__list-item a:active::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #ffba58;
+  bottom: -5px;
+  left: 15px;
+  width: 0;
+}
+li.menu__list-item.active a:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #ffba58;
+  bottom: -5px;
+  left: 15px;
+  width: 100%;
+}
+
+nav .navbar .menu__list-item a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+}
+nav .navbar .menu__list-item:last-child {
+  margin-right: 0;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.menu__list.active {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(269.2deg, #424b8a 6.64%, #d9f0ff 100.23%);
+
+  z-index: 101 !important;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 885px) {
+  .burger {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 30px;
+    z-index: 102;
+    cursor: pointer;
+  }
+  .burger.active-burger:before {
+    background: #000;
+    transform: rotate(45deg);
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    top: 8px;
+  }
+  .burger.active-burger:after {
+    background: #000;
+    transform: rotate(-45deg);
+    bottom: 10px;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+  .burger.active-burger span {
+    transform: scale(0);
+  }
+  .burger:before,
+  .burger:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: white;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+  .burger:before {
+    top: 0;
+  }
+  .burger::after {
+    bottom: 0;
+  }
+  .burger span {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 100%;
+    background: white;
+    height: 2px;
+    transform: scale(1);
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+  .menu__list {
+    position: absolute;
+    top: -100%;
+  }
+  .menu__list-item {
+    margin-right: 0 !important;
+  }
+  .menu__list-item a {
+    color: black;
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"estruktura-film_by",
+"description":"estruktura-film_by",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	@@include('components/bem-blocks/_home-sections.html')
+	@@include('components/bem-blocks/_advantage.html')
+	@@include('components/bem-blocks/_home-servises.html')
+	@@include('components/bem-blocks/_best-videos.html')
+	@@include('components/bem-blocks/_reviews.html')
+	@@include('components/bem-blocks/_faq-&-news.html')
+	@@include('components/bem-blocks/_home-feedback.html')
+  <script src="/js/swiper-bundle.min.js"></script>
+  <script>
+	  /// слайдер
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+  </script>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+	@@include('components/bem-blocks/_popup-form.html') 
+	
+</body>
+</html>

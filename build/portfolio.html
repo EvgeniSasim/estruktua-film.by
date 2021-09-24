@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="estruktura-film_by" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>estruktura-film_by</title>
+  </head>
+</html>
+
+
+<body>
+	<header>
+  <div class="container">
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="<?php bloginfo( 'template_url' ); ?>/img/logo_text.webp"
+              alt="Logo"
+              id="logo"
+            />
+          </a>
+        </div>
+        <div class="menu">
+          <ul class="menu__list">
+            <?php
+            wp_nav_menu( [
+            'theme_location'  =>
+            'header_menu', 'menu' => '', 'container' => false, 'echo' => true,
+            'fallback_cb' => 'wp_page_menu', 'items_wrap' => ' %3$s ', 'depth'
+            => 1, ] ); ?>
+          </ul>
+        </div>
+        <div class="tell">
+          <ul>
+            <li>
+              <a href="tel:+375447456031" id="tell-first">+375(44)7456031</a>
+              <ul class="tell-second">
+                <li><a href="tel:+375447456031">+375(29)7459031</a></li>
+                <li><a href="tel:+375447456031">+375(22)2770944</a></li>
+              </ul>
+            </li>
+          </ul>
+          <img
+            src="<?php bloginfo( 'template_url' ); ?>/img/Polygon.webp"
+            alt="Polygon"
+          />
+        </div>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+	<section class="header-title">
+  <div class="container">
+    <div class="img-title">
+      <img src="/img/portfolio.webp" alt="ПОРТФОЛИО" />
+    </div>
+    <div class="contents-title">
+      <h1>ПОРТФОЛИО</h1>
+      <div class="subtitle">
+        Здесь вы можете посмотреть все наши анимационыые ролики и мульсериалы.
+        Приятного просмотра!
+      </div>
+    </div>
+  </div>
+</section>
+
+	<section class="breadcrumbs">
+  <div class="container">
+    <div class="page-title-breadcrumbs">
+      <div class="assistive-text">Вы здесь:</div>
+      <ol
+        class="breadcrumbs text-small"
+        itemscope=""
+        itemtype="https://schema.org/BreadcrumbList"
+      >
+        <li
+          itemprop="itemListElement"
+          itemscope=""
+          itemtype="https://schema.org/ListItem"
+        >
+          <a itemprop="item" href="/" title=""
+            ><span itemprop="name">Главная</span></a
+          ><meta itemprop="position" content="1" />
+        </li>
+        <li
+          class="current"
+          itemprop="itemListElement"
+          itemscope=""
+          itemtype="https://schema.org/ListItem"
+        >
+          <span itemprop="name">Портфолио</span
+          ><meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section class="best-videos">
+  <div class="container" id="best-videos__services-page">
+    <h2>Наши работы</h2>
+    <div class="subtitle">
+      Несмотря на молодость нашей студии, мы создали уже много анимационных
+      роликов для бизнеса и выпустили мультсериал.
+    </div>
+    <div class="videos" id="video__portfolio-page">
+      <div class="videos__item">
+        <div class="video">
+          <a
+            href="https://youtu.be/Q6SHPGHYRB0"
+            target="_blanck"
+            rel="nofollow"
+          >
+            <img
+              src="/img/adventures_Masha_and_Sasha.webp"
+              alt="Приключения Саши и Маши"
+          /></a>
+        </div>
+        <div class="descr">
+          Мультсериал Приключения Маши и Саши. Сери №1 Миссия Египта
+        </div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <a
+            href="https://youtu.be/UP1hYjRoxdo"
+            target="_blanck"
+            rel="nofollow"
+          >
+            <img src="/img/safety_on_the water.webp" alt="Безопасность на воде"
+          /></a>
+        </div>
+        <div class="descr">Анимационный ролик Безопасность на воде</div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <a
+            href="https://youtu.be/Jx2n1YIaffg"
+            target="_blanck"
+            rel="nofollow"
+          >
+            <img
+              src="/img/adventures_of_Masha_and_Sasha.webp"
+              alt="Приключения Саши и Маши часть 2"
+          /></a>
+        </div>
+        <div class="descr">
+          Мультсериал Приключения Маши и Саши. Сери №2 Мексиканская аномалия
+        </div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <img src="/img/Commercials_video.webp" alt="Рекламный ролик" />
+        </div>
+        <div class="descr">Рекламный ролик нашей студии</div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <a
+            href="https://youtu.be/Q6SHPGHYRB0"
+            target="_blanck"
+            rel="nofollow"
+          >
+            <img
+              src="/img/adventures_Masha_and_Sasha.webp"
+              alt="Приключения Саши и Маши"
+          /></a>
+        </div>
+        <div class="descr">
+          Мультсериал Приключения Маши и Саши. Сери №1 Миссия Египта
+        </div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <a
+            href="https://youtu.be/UP1hYjRoxdo"
+            target="_blanck"
+            rel="nofollow"
+          >
+            <img src="/img/safety_on_the water.webp" alt="Безопасность на воде"
+          /></a>
+        </div>
+        <div class="descr">Анимационный ролик Безопасность на воде</div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <a
+            href="https://youtu.be/Jx2n1YIaffg"
+            target="_blanck"
+            rel="nofollow"
+          >
+            <img
+              src="/img/adventures_of_Masha_and_Sasha.webp"
+              alt="Приключения Саши и Маши часть 2"
+          /></a>
+        </div>
+        <div class="descr">
+          Мультсериал Приключения Маши и Саши. Сери №2 Мексиканская аномалия
+        </div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <img src="/img/Commercials_video.webp" alt="Рекламный ролик" />
+        </div>
+        <div class="descr">Рекламный ролик нашей студии</div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <a
+            href="https://youtu.be/Q6SHPGHYRB0"
+            target="_blanck"
+            rel="nofollow"
+          >
+            <img
+              src="/img/adventures_Masha_and_Sasha.webp"
+              alt="Приключения Саши и Маши"
+          /></a>
+        </div>
+        <div class="descr">
+          Мультсериал Приключения Маши и Саши. Сери №1 Миссия Египта
+        </div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <a
+            href="https://youtu.be/UP1hYjRoxdo"
+            target="_blanck"
+            rel="nofollow"
+          >
+            <img src="/img/safety_on_the water.webp" alt="Безопасность на воде"
+          /></a>
+        </div>
+        <div class="descr">Анимационный ролик Безопасность на воде</div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <a
+            href="https://youtu.be/Jx2n1YIaffg"
+            target="_blanck"
+            rel="nofollow"
+          >
+            <img
+              src="/img/adventures_of_Masha_and_Sasha.webp"
+              alt="Приключения Саши и Маши часть 2"
+          /></a>
+        </div>
+        <div class="descr">
+          Мультсериал Приключения Маши и Саши. Сери №2 Мексиканская аномалия
+        </div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <img src="/img/Commercials_video.webp" alt="Рекламный ролик" />
+        </div>
+        <div class="descr">Рекламный ролик нашей студии</div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <a
+            href="https://youtu.be/Q6SHPGHYRB0"
+            target="_blanck"
+            rel="nofollow"
+          >
+            <img
+              src="/img/adventures_Masha_and_Sasha.webp"
+              alt="Приключения Саши и Маши"
+          /></a>
+        </div>
+        <div class="descr">
+          Мультсериал Приключения Маши и Саши. Сери №1 Миссия Египта
+        </div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <a
+            href="https://youtu.be/UP1hYjRoxdo"
+            target="_blanck"
+            rel="nofollow"
+          >
+            <img src="/img/safety_on_the water.webp" alt="Безопасность на воде"
+          /></a>
+        </div>
+        <div class="descr">Анимационный ролик Безопасность на воде</div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <a
+            href="https://youtu.be/Jx2n1YIaffg"
+            target="_blanck"
+            rel="nofollow"
+          >
+            <img
+              src="/img/adventures_of_Masha_and_Sasha.webp"
+              alt="Приключения Саши и Маши часть 2"
+          /></a>
+        </div>
+        <div class="descr">
+          Мультсериал Приключения Маши и Саши. Сери №2 Мексиканская аномалия
+        </div>
+      </div>
+      <div class="videos__item">
+        <div class="video">
+          <img src="/img/Commercials_video.webp" alt="Рекламный ролик" />
+        </div>
+        <div class="descr">Рекламный ролик нашей студии</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="command-section portfolio-about-work">
+  <div class="container">
+    <h4>Как мы работаем</h4>
+    <div class="portfolio-page__subtitle">
+      От оформления заказа до получения готового проекта
+    </div>
+    <div class="contents__items">
+      <div class="contents__items__item">
+        <div class="contents__items__item__img">
+          <img src="/img/consultation.webp" alt="Уникальность" />
+        </div>
+        <div class="contents__items__item__descr">
+          Индивидуальный подход и оригинальные идеи для каждого клиента
+        </div>
+      </div>
+      <div class="contents__items__item">
+        <div class="contents__items__item__img">
+          <img src="/img/scenario.webp" alt="Экспертность" />
+        </div>
+        <div class="contents__items__item__descr">
+          Работаем на результат во всех сферах 2D анимации с полным циклом
+          производства
+        </div>
+      </div>
+      <div class="contents__items__item">
+        <div class="contents__items__item__img">
+          <img src="/img/animation_voice_acting.webp" alt="Доступность" />
+        </div>
+        <div class="contents__items__item__descr">
+          Доступные цены и гибкая система скидок для наших постоянных клиентов и
+          партнеров
+        </div>
+      </div>
+      <div class="contents__items__item">
+        <div class="contents__items__item__img">
+          <img src="/img/affirm.webp" alt="Оперативность" />
+        </div>
+        <div class="contents__items__item__descr">
+          Распланированный поэтапно проект, оперативность создания анимации
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="feedback-section callback-section">
+  <div class="container">
+    <h3>Узнать стоимость и сроки исполнения</h3>
+    <div class="feedback-contents">
+      <div class="feedback__form">
+        <div class="feedback__form__descr">
+          Мы свяжемся с вами, уточним детали, рассчитаем сроки и бюджет по
+          созданию анимационного ролика для вас.
+        </div>
+        <form action="" class="callback-form">
+          <div class="input-name">
+            <div class="input-text">Имя</div>
+            <input
+              type="text"
+              placeholder="Введите ваше имя "
+              required="required"
+            />
+          </div>
+          <div class="input-number">
+            <div class="input-text">Телефон</div>
+            <input
+              type="text"
+              placeholder="Введите номер телефона"
+              required="required"
+            />
+          </div>
+          <button class="btn">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-faq-news" id="page-portfolio__news">
+  <div class="container">
+    <div class="news">
+      <h3>Новости</h3>
+      <div class="news__items">
+        <div class="news__items__item">
+          <div class="news-img">
+            <img src="/img/contest.webp" alt="Конкурс" />
+          </div>
+          <div class="news-content">
+            <div class="news-content__date">31/08/2021</div>
+            <div class="news-content__anons">
+              Мы подали заявку на участие в международном конкурсе “Анимаёвка
+              2021”.
+            </div>
+            <a href="#">Читать далее</a>
+          </div>
+        </div>
+        <div class="news__items__item">
+          <div class="news-img">
+            <img src="/img/news_mult.webp" alt="Конкурс" />
+          </div>
+          <div class="news-content">
+            <div class="news-content__date">02/09/2021</div>
+            <div class="news-content__anons">
+              Мы приступили к созданию нового мультсериала. Совсем скоро первая
+              серия.
+            </div>
+            <a href="#">Читать далее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+	<footer class="footer">
+  <section class="footer-info">
+    <div class="container">
+      <div class="footer-navi">
+        <div class="footer-navi__title">
+          Частное проектно-строительное унитарное предприятие “ЭСТУКТУРА”
+        </div>
+        <div class="footer-navi__list">
+          <ul>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="contact-us.html">О компании</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-contacts">
+        <div class="footer-contacts__title">Контакты</div>
+        <div class="footer-contacts__list">
+          <a href="tel:+375447456031">+375447456031</a>
+          <a href="tel:+375297459031">+375297459031</a>
+          <div>
+            <a href="tel:+375222770944">+375222770944</a>
+            <span>тел./факс.</span>
+          </div>
+          <a href="mailto:estruktura-m@mail.ru">estruktura-m@mail.ru</a>
+        </div>
+      </div>
+      <div class="footer-adress">
+        <div class="footer-adress__title">Адрес</div>
+        <div class="footer-adress__location">
+          <span>Республика Беларусь</span>
+          <span>Могилевская область</span>
+          <span>г.Могилев</span>
+          <span>ул. Космонавтов, 12</span>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <div class="footer-socials__title">Следите за новостями</div>
+        <div class="footer-socials__icons">
+          <a href="https://www.instagram.com/estruktura_m/" target="_blanck"
+            ><img
+              src="<?php bloginfo( 'template_url' ); ?>/img/instagram_icon.webp"
+              alt="Instagram"
+          /></a>
+          <a href="https://vk.com/estruktura" target="_blanck"
+            ><img
+              src="<?php bloginfo( 'template_url' ); ?>/img/vk_icon.webp"
+              alt="VK"
+          /></a>
+          <a href="#"
+            ><img
+              src="<?php bloginfo( 'template_url' ); ?>/img/fb_icon.webp"
+              alt="FaceBook"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-section">
+    <span>Copyright © 2021 Все права защищены</span>
+  </section>
+</footer>
+
+	<script src="js/main.min.js"></script>
+
+	<div class="popup-form" id="myForm">
+  <div class="popup-form__close" onclick="closeForm('myForm')">
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/img/close.webp"
+      alt="Close"
+    />
+  </div>
+  <div class="popup-form__title">Отправить заявку</div>
+  <form action="mail.php" method="POST" id="popup">
+    <div class="input-name">
+      <div class="input-text">Имя</div>
+      <input
+        type="text"
+        placeholder="Введите ваше имя "
+        required="required"
+        name="name"
+      />
+    </div>
+    <div class="input-number">
+      <div class="input-text">Телефон</div>
+      <input
+        type="text"
+        name="phone"
+        placeholder="Введите номер телефона"
+        required="required"
+      />
+    </div>
+    <button class="btn" type="submit">Отправить</button>
+  </form>
+  <img
+    src="<?php bloginfo( 'template_url' ); ?>/img/callback.webp"
+    alt="Оставить заявку"
+    class="popup-form__img"
+  />
+</div>
+
+<div class="thanks-form" id="thanks-window">
+  <div class="thanks-form__close" onclick="closeForm('thanks-window')">
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/img/close.webp"
+      alt="Close"
+    />
+  </div>
+  <div class="thank-content">
+    <div class="thanks-form__title">Спасибо! Ваш запрос отправлен!</div>
+    <img
+      src="<?php bloginfo( 'template_url' ); ?>/img/good.webp"
+      alt="Оставить заявку"
+      class="thanks-form__img"
+    />
+  </div>
+</div>
+ 
+</body>
+</html>

@@ -1,0 +1,38 @@
+<section class="feedback-section">
+  <div class="container">
+    <h3>Узнать стоимость и сроки исполнения</h3>
+    <div class="feedback-contents">
+      <div class="feedback__form">
+        <div class="feedback__form__descr">
+          Мы свяжемся с вами, уточним детали, рассчитаем сроки и бюджет по
+          созданию анимационного ролика для вас.
+        </div>
+        <form action="/mail.php" method="POST">
+          <div class="input-name">
+            <div class="input-text">Имя</div>
+            <input
+              type="text"
+              placeholder="Введите ваше имя "
+              required="required"
+            />
+          </div>
+          <div class="input-number">
+            <div class="input-text">Телефон</div>
+            <input
+              type="text"
+              placeholder="Введите номер телефона"
+              required="required"
+            />
+          </div>
+          <button class="btn">Оставить заявку</button>
+        </form>
+      </div>
+      <div class="feedback__img">
+        <img
+          src="<?php bloginfo( 'template_url' ); ?>/img/Feedback.webp"
+          alt="Узнать стоимость и сроки"
+        />
+      </div>
+    </div>
+  </div>
+</section>
